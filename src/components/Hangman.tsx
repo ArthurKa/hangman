@@ -28,6 +28,7 @@ const Hangman: React.FC<{ word: string }> = ({ word }) => {
 
   return (
     <div className="flex h-full flex-col items-center gap-5 p-2 md:p-10">
+      {currentWord}
       <HangmanBody score={errorScore} />
       <HangmanWord word={currentWord} letters={selectedLetters} />
       <HangmanKeyboard
